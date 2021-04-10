@@ -24,7 +24,7 @@ However, please ensure you use [material.angular.io](https://material.angular.io
 
 <br>
 
-## Getting Started
+## **Getting Started**
 
 <br>
 <br>
