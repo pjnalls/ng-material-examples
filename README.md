@@ -39,11 +39,17 @@ However, please ensure you use [material.angular.io](https://material.angular.io
 <br>
 <br>
 
-### Note Before Using
+### Steps Before Using Examples
 
 <br>
 
-If you already 1) have an Angular 11+ app generated with Angular CLI, and 2) have Angular Material added to your app, then feel free to skip this section.
+If you already:
+1. have an Angular 11+ app generated with Angular CLI, and
+2. have Angular Material added to your app...
+
+... then feel free to skip this section.
+
+<br>
 
 If you want to generate an Angular 11+ app then run the following commands from your local system terminal:
 
