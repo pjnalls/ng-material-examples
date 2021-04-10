@@ -14,9 +14,9 @@
 Working examples of Angular Material Design components.
 <br>
 <br>
-I'll provide documentation to hopeful some possible problems you may run into as you integrate and use Angular's Material modules.
+I'll provide documentation to hopefully solve some possible problems you may run into as you integrate and use Angular's Material modules.
 
-However, please ensure you use [material.angular.io](https://material.angular.io/) as your primary source as a guide for understanding and using Material Design components.
+However, please ensure you use [material.angular.io](https://material.angular.io/) as your primary source and guide to understanding and using Material Design components.
 </p>
 
 <p align="right">— @pjnalls</p>
