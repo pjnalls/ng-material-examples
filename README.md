@@ -3,6 +3,9 @@
 <b>Angular Material Examples</b>
 <br>
 <br>
+<img alt="ng-mat-ex. logo" src="ng-mat-ex.png" width="240px">
+<br>
+<br>
 </h1>
 
 <br>
