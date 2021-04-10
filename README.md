@@ -93,3 +93,21 @@ UPDATE angular.json (3981 bytes)
 UPDATE src/index.html (586 bytes)
 UPDATE src/styles.scss (181 bytes)
 ```
+
+<br>
+
+## [**Angular Material Design Component Examples**](https://github.com/pjnalls/ng-material-examples/tree/main/src/app)
+
+<br>
+I'll mention it here but also at the header-link (directly above) to my examples:
+
+I'm using the Angular `./src/app` folder as the central place where I'm storing all my working examples.
+
+Please go there or [here](https://github.com/pjnalls/ng-material-examples/tree/main/src/app) for those examples.
+
+<br>
+<br>
+
+<hr>
+
+<br>
