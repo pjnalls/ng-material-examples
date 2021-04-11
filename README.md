@@ -11,7 +11,7 @@
 <br>
 
 <p>
-Working examples of Angular Material Design components.
+Fully functional examples of Angular Material Design components.
 <br>
 <br>
 I'll provide documentation to hopefully solve some possible problems you may run into as you integrate and use Angular's Material modules.
