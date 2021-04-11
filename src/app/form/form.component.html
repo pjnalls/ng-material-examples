@@ -1,0 +1,28 @@
+<div class="example-container">
+  <form [formGroup]="options">
+    <mat-form-field
+      *ngFor="let field of columns"
+      appearance="fill"
+      [floatLabel]="floatLabelControl.value"
+    >
+      <mat-label>{{ field.header }}</mat-label>
+      <input matInput placeholder="{{ field.def }}" />
+    </mat-form-field>
+
+    <mat-form-field
+      appearance="fill"
+      [hideRequiredMarker]="hideRequiredControl.value"
+      [floatLabel]="floatLabelControl.value"
+    >
+      <mat-select required>
+        <mat-option>-- None --</mat-option>
+        <mat-option
+          *ngFor="let cool of coolness"
+          value="{{ cool.toLowerCase() }}"
+          >{{ cool }}</mat-option
+        >
+      </mat-select>
+      <mat-label><mat-icon>cool</mat-icon> <b> Coolness</b></mat-label>
+    </mat-form-field>
+  </form>
+</div>
