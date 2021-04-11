@@ -13,7 +13,7 @@
 
 <div align="center">
 
-For these working examples, I'm using the Angular `./src/app` folder as the central place where I'm storing all of them.
+For these working examples, I'm using the Angular `./src/app` folder as the central place to store all of them.
 
 </div>
 <br>
