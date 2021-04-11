@@ -58,7 +58,7 @@ If you want to generate an Angular 11+ app then run the following commands from 
 
 
 ``` bash
-$ ng new <new-app-name>
+$ ng new new-app-name
 ```
 
 <br>
@@ -69,7 +69,7 @@ Your input should be independent from what is needed for Angular Material exampl
 ...
 
 ```bash
-$ cd ./<new-app-name>
+$ cd ./new-app-name
 
 $ ng add @angular/material
 ...
