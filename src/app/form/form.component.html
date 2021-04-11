@@ -1,5 +1,5 @@
 <div class="example-container">
-  <form [formGroup]="options">
+  <form [formGroup]="options" (ngSubmit)="addElement()">
     <mat-form-field
       *ngFor="let field of columns"
       appearance="fill"
@@ -24,5 +24,15 @@
       </mat-select>
       <mat-label><mat-icon>cool</mat-icon> <b> Coolness</b></mat-label>
     </mat-form-field>
+    <br>
+    <div class="submit">
+      <button
+        mat-raised-button color="primary"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+    <br><br>
   </form>
 </div>

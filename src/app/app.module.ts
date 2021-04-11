@@ -58,7 +58,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatIconModule,
     MatRadioModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

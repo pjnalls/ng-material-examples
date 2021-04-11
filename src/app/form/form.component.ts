@@ -28,4 +28,8 @@ export class FormComponent {
   ];
 
   coolness = ['Excellent', 'Superb', 'Great', 'Nice', 'Terrific'];
+
+  addElement() {
+    console.log(this.options);
+  }
 }
