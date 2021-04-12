@@ -41,7 +41,7 @@ export class TableSortAndPaginationComponent implements AfterViewInit {
   ngOnInit() {
     this.data.currentMessage.subscribe((message) => {
       this.message = message;
-      this.dataSource = new MatTableDataSource<PeriodicElementInterface>(message);
+      this.dataSource.data = message;
     });
   }
 
