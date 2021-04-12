@@ -22,6 +22,7 @@ import { PeriodicElementInterface } from '../periodic-element/periodic-element';
 })
 export class TableSortAndPaginationComponent implements AfterViewInit {
   message!: PeriodicElementInterface[];
+  input!: PeriodicElementInterface;
   dataSource: MatTableDataSource<PeriodicElementInterface> = 
     new MatTableDataSource<PeriodicElementInterface>();
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
@@ -44,6 +45,7 @@ export class TableSortAndPaginationComponent implements AfterViewInit {
       this.message = message;
       this.dataSource.data = message;
     });
+    this.data.currentInput.subscribe((input) => this.input = input);
   }
 
   columns: ColumnHeader[] = [
@@ -52,6 +54,13 @@ export class TableSortAndPaginationComponent implements AfterViewInit {
     { def: 'weight', header: 'Weight' },
     { def: 'symbol', header: 'Symbol' },
   ];
+
+  populateForms(def: string, value: string) {
+    if (def === 'position') {
+      this.data.changeInput(this.message[parseInt(value) - 1]);
+      console.log(this.message[parseInt(value) - 1]);
+    }
+  }
 }
 
 export interface ColumnHeader {

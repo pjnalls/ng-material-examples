@@ -6,6 +6,11 @@ import { PeriodicElementInterface } from './periodic-element';
   providedIn: 'root'
 })
 export class PeriodicElementService {
+  private inputSource = 
+    new BehaviorSubject<PeriodicElementInterface>(
+      { position: 360, name: 'Angularoniumn', weight: 9.142016, symbol: 'Ng' }
+    );
+
   private messageSource = 
     new BehaviorSubject<PeriodicElementInterface[]>(
       [
@@ -32,10 +37,15 @@ export class PeriodicElementService {
       ]
   )
   currentMessage = this.messageSource.asObservable();
+  currentInput = this.inputSource.asObservable();
 
   constructor() { }
 
   changeMessage(message: PeriodicElementInterface[]) {
     this.messageSource.next(message);
+  }
+
+  changeInput(input: PeriodicElementInterface) {
+    this.inputSource.next(input);
   }
 }

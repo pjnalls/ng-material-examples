@@ -23,20 +23,25 @@ export class FormComponent implements OnInit {
   floatLabelControl = new FormControl('auto');
 
   message!: PeriodicElementInterface[];
+  input!: PeriodicElementInterface;
 
-  constructor(fb: FormBuilder, private service: PeriodicElementService) {
-    this.options = fb.group({
-      hideRequired: this.hideRequiredControl,
-      floatLabel: this.floatLabelControl,
-      position: new FormControl(),
-      name: new FormControl(),
-      weight: new FormControl(),
-      symbol: new FormControl(),
-    });
+  constructor(private fb: FormBuilder, private service: PeriodicElementService) {
+    this.options = fb.group({});
   }
 
   ngOnInit() {
     this.service.currentMessage.subscribe((message) => (this.message = message));
+    this.service.currentInput.subscribe((input) => {
+      this.input = input;
+      this.options = this.fb.group({
+        hideRequired: this.hideRequiredControl,
+        floatLabel: this.floatLabelControl,  
+        position: new FormControl(this.input.position),
+        name: new FormControl(this.input.name),
+        weight: new FormControl(this.input.weight),
+        symbol: new FormControl(this.input.symbol),
+      });
+    });
   }
 
   columns: ColumnHeader[] = [
