@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ColumnHeader } from '../table-sort-and-pagination/table-sort-and-pagination.component';
+
+/** Ensure that you update your 'app.module.ts' file
+ * by importing the appropriate modules.
+ *
+ * See the 'app.module.ts' file comments for guidance.*/
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+/** */
+
 import { PeriodicElementInterface } from '../periodic-element/periodic-element';
 import { PeriodicElementService } from '../periodic-element/periodic-element.service';
 
