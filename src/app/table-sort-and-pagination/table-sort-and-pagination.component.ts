@@ -4,10 +4,11 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
  * by importing the appropriate modules.
  *
  * See the 'app.module.ts' file comments for guidance.*/
-
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+/** */
+
 import { PeriodicElementService } from '../periodic-element/periodic-element.service';
 import { PeriodicElementInterface } from '../periodic-element/periodic-element';
 
