@@ -6,7 +6,11 @@
       [floatLabel]="floatLabelControl.value"
     >
       <mat-label>{{ field.header }}</mat-label>
-      <input matInput placeholder="{{ field.def }}" />
+      <input
+        matInput
+        placeholder="{{ field.value }}"
+        formControlName="{{ field.def }}"
+      />
     </mat-form-field>
 
     <mat-form-field
@@ -24,15 +28,10 @@
       </mat-select>
       <mat-label><mat-icon>cool</mat-icon> <b> Coolness</b></mat-label>
     </mat-form-field>
-    <br>
+    <br />
     <div class="submit">
-      <button
-        mat-raised-button color="primary"
-        type="submit"
-      >
-        Submit
-      </button>
+      <button mat-raised-button color="primary" type="submit">Save</button>
     </div>
-    <br><br>
+    <br /><br />
   </form>
 </div>
