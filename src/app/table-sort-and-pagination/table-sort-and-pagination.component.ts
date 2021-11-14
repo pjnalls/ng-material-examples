@@ -58,7 +58,6 @@ export class TableSortAndPaginationComponent implements AfterViewInit {
   populateForms(def: string, value: string) {
     if (def === 'position') {
       this.data.changeInput(this.message[parseInt(value) - 1]);
-      console.log(this.message[parseInt(value) - 1]);
     }
   }
 }
